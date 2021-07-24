@@ -68,7 +68,7 @@
   --text-nav-selected: rgb(255, 255, 255);
   --text-nav: rgb(190, 190, 190);
   --text-normal: rgb(216, 216, 216);
-  --text-normal-oppsite: rgb(44, 44, 44);
+  --text-normal-opposite: rgb(44, 44, 44);
 }
 
 /* header colors */
@@ -668,13 +668,23 @@ a.tag {
   --color-text-today: var(--pistachio);
 }
 
+#calendar-container .day.today{
+  font-weight: bold;
+  background-color: rgb(216, 216, 216, 0.25);
+}
+
 /* fix graph controls */
 .workspace-split.mod-right-split .graph-controls,
 .workspace-split.mod-right-split .graph-control-section-header {
-  color: var(--text-normal-oppsite);
+  color: var(--text-normal-opposite);
   background-color: var(--background-nav);
   --background-secondary-alt: var(--background-nav-alt);
   --background-modifier-border: var(--background-nav-alt);
+}
+
+
+.workspace-split.mod-right-split .workspace-leaf .view-content{
+  color: var(--text-normal-opposite);
 }
 
 /* fix graph text */
